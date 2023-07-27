@@ -6,15 +6,12 @@ import Login from "../../Pages/Login/Login";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main></Main>,
-    children: [
-      { path: "/", element: <Dashboard></Dashboard> },
-      { path: "/dashboard", element: <Dashboard></Dashboard> },
-    ],
+    element: <Login />,
   },
   {
-    path: "/login",
-    element: <Login />,
+    path: "/dashboard",
+    element: <Main></Main>,
+    children: [{ path: "/dashboard", element: <Dashboard /> }],
   },
 ]);
 
