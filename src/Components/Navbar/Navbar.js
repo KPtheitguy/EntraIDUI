@@ -1,9 +1,10 @@
 import React from "react";
+import navbar from "../../Assets/Images/navbar.png";
 
 const Navbar = () => {
   return (
     <div>
-      <h1>Navbar</h1>
+      <img src={navbar} alt="" className="w-full" />
     </div>
   );
 };
